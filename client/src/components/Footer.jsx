@@ -7,7 +7,7 @@ export default function FooterComponent() {
             <div className='w-full max-w-7xl mx-auto'>
                 <div className='grid w-full justify-between sm:flex md:grid-cols-1'>
                     <div className='mt-5'>
-                        <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
+                        <Link to="/" className='self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white'>
                             <span className='px-2 py-1 bg-gradient-to-r from-blue-500 via-red-500 to-blue-500 rounded-lg text-white '>Malik's</span> Blog
                         </Link>
                     </div>
@@ -35,7 +35,7 @@ export default function FooterComponent() {
                             <Footer.Title title='Follow us' />
                             <Footer.LinkGroup col>
                                 <Footer.Link
-                                    href='https://www.github.com/sahandghavidel'
+                                    href='https://www.github.com/Abdul-Malik20'
                                     target='_blank'
                                     rel='noopener noreferrer'
                                 >

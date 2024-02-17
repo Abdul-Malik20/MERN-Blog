@@ -5,6 +5,7 @@ import jwt from "jsonwebtoken";
 
 export const signup = async (req, res, next) => {
   const { username, email, password } = req.body;
+
   if (
     !username ||
     !email ||
@@ -23,9 +24,10 @@ export const signup = async (req, res, next) => {
     email,
     password: hashedPassword,
   });
+
   try {
     await newUser.save();
-    res.json("Sign Up Successfull");
+    res.json("Signup successful");
   } catch (error) {
     next(error);
   }
