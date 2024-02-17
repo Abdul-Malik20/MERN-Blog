@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Alert, Button, Spinner } from "flowbite-react";
 import { Link, useNavigate } from "react-router-dom";
+import OAuth from '../components/OAuth';
 
 const Signup = () => {
   const [formData, setFormData] = useState({});
@@ -71,6 +72,7 @@ const Signup = () => {
                   ) : 'Sign Up'
                 }
               </Button>
+              <OAuth />
               {
                 errorMessage && (
                   <Alert className='mt-5' color='failure'>
